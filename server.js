@@ -30,6 +30,7 @@ app.route('/_api/package.json')
     fs.readFile(__dirname + '/package.json', function(err, data) {
       if(err) return next(err);
       res.type('txt').send(data.toString());
+      console.log("free codecamp was here")
     });
   });
   
@@ -53,7 +54,7 @@ app.use(function(err, req, res, next) {
   }  
 })
 
-app.listen(process.env.PORT, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('Node.js listening ...');
 });
 

@@ -1,8 +1,17 @@
 {
 	"author": "Steven Rogers",
+	"description": "A sample backend for Freecodecamp.com",
+	"keywords": [
+		"Tony",
+		"Stark",
+		"freecodecamp"
+	],
+	"license": "MIT",
+	"version": "14.16.0",
 	"name": "fcc-learn-npm-package-json",
 	"dependencies": {
-		"express": "^4.14.0"
+		"express": "^4.14.0",
+		"moment": "2.14.0"
 	},
 	"main": "server.js",
 	"scripts": {
